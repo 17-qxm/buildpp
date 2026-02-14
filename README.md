@@ -1,4 +1,4 @@
-# C++ Build Helper
+# Build++
 
 一个简单易用的C++编译辅助工具，比CMake更加简便，支持增量编译、库管理和灵活的配置选项。
 
@@ -16,12 +16,12 @@
 ### 1. 编译构建工具本身
 
 ```bash
-g++ -std=c++17 -O2 main.cpp config.cpp compiler.cpp dependency.cpp -o buildhelper
+g++ -std=c++17 -O2 main.cpp config.cpp compiler.cpp dependency.cpp -o buildpp
 ```
 
 Windows:
 ```bash
-g++ -std=c++17 -O2 main.cpp config.cpp compiler.cpp dependency.cpp -o buildhelper.exe
+g++ -std=c++17 -O2 main.cpp config.cpp compiler.cpp dependency.cpp -o buildpp.exe
 ```
 
 ### 2. 创建配置文件
@@ -68,7 +68,7 @@ g++ -std=c++17 -O2 main.cpp config.cpp compiler.cpp dependency.cpp -o buildhelpe
 ### 3. 构建项目
 
 ```bash
-./buildhelper build
+./buildpp build
 ```
 
 ## 使用方法
@@ -77,23 +77,23 @@ g++ -std=c++17 -O2 main.cpp config.cpp compiler.cpp dependency.cpp -o buildhelpe
 
 ```bash
 # 构建项目（默认）
-./buildhelper
-./buildhelper build
+./buildpp
+./buildpp build
 
 # 清理构建文件
-./buildhelper clean
+./buildpp clean
 
 # 重新构建（清理后构建）
-./buildhelper rebuild
+./buildpp rebuild
 
 # 使用自定义配置文件
-./buildhelper myconfig.json
+./buildpp myconfig.json
 
 # 显示详细配置信息
-./buildhelper -v build
+./buildpp -v build
 
 # 显示帮助
-./buildhelper --help
+./buildpp --help
 ```
 
 ## 配置文件说明

@@ -241,12 +241,12 @@ bool ConfigParser::generateGuideDocument(const std::string& filename) {
     file << "## Quick Start\n\n";
     file << "1. Initialize a new project:\n";
     file << "   ```bash\n";
-    file << "   ./buildhelper init\n";
+    file << "   ./buildpp init\n";
     file << "   ```\n\n";
     file << "2. Edit `build.json` with your project settings\n\n";
     file << "3. Build your project:\n";
     file << "   ```bash\n";
-    file << "   ./buildhelper build\n";
+    file << "   ./buildpp build\n";
     file << "   ```\n\n";
     
     file << "## Configuration Fields\n\n";
@@ -457,45 +457,45 @@ bool ConfigParser::generateGuideDocument(const std::string& filename) {
     file << "## Commands\n\n";
     file << "### Initialize Project\n";
     file << "```bash\n";
-    file << "./buildhelper init\n";
+    file << "./buildpp init\n";
     file << "```\n";
     file << "Creates `build.json` and `BUILD_GUIDE.md` in the current directory.\n\n";
     
     file << "### Build Project\n";
     file << "```bash\n";
-    file << "./buildhelper build\n";
+    file << "./buildpp build\n";
     file << "# or simply\n";
-    file << "./buildhelper\n";
+    file << "./buildpp\n";
     file << "```\n";
     file << "Compiles the project using incremental compilation.\n\n";
     
     file << "### Clean Build Artifacts\n";
     file << "```bash\n";
-    file << "./buildhelper clean\n";
+    file << "./buildpp clean\n";
     file << "```\n";
     file << "Removes the build directory and all compiled files.\n\n";
     
     file << "### Rebuild Project\n";
     file << "```bash\n";
-    file << "./buildhelper rebuild\n";
+    file << "./buildpp rebuild\n";
     file << "```\n";
     file << "Cleans and then builds the project.\n\n";
     
     file << "### Verbose Output\n";
     file << "```bash\n";
-    file << "./buildhelper -v build\n";
+    file << "./buildpp -v build\n";
     file << "```\n";
     file << "Shows detailed configuration information before building.\n\n";
     
     file << "### Custom Config File\n";
     file << "```bash\n";
-    file << "./buildhelper myconfig.json\n";
+    file << "./buildpp myconfig.json\n";
     file << "```\n";
     file << "Uses a custom configuration file.\n\n";
     
     file << "### Help\n";
     file << "```bash\n";
-    file << "./buildhelper --help\n";
+    file << "./buildpp --help\n";
     file << "```\n\n";
     
     file << "## Tips and Best Practices\n\n";
@@ -507,7 +507,7 @@ bool ConfigParser::generateGuideDocument(const std::string& filename) {
     
     file << "## Troubleshooting\n\n";
     file << "**Problem:** \"Cannot open config file: build.json\"  \n";
-    file << "**Solution:** Run `./buildhelper init` to create a default configuration.\n\n";
+    file << "**Solution:** Run `./buildpp init` to create a default configuration.\n\n";
     file << "**Problem:** \"source_files is required in config file\"  \n";
     file << "**Solution:** Add at least one source file or directory to the `source_files` array.\n\n";
     file << "**Problem:** Directory scanning finds no files  \n";
